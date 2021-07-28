@@ -2,30 +2,28 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Django - index</title>
+    <title>Produto</title>
 </head>
 <body>
-    <h1>index</h1>
 
-    <h2>{{ curso }}</h2>
-
-    <p>{{ outro }}</p>
+    <h1>Produto</h1>
 
     <table>
         <thead>
             <tr>
                 <td><b>Produto</b></td>
                 <td><b>Preço</b></td>
+                <td><b>Estoque</b></td>
             </tr>
         </thead>
         <tbody>
-        {% for produto in produtos %}
             <tr>
-                <td><a href="{% url 'produto' produto.id %}">{{ produto.nome }}</a></td>
+                <td><a href="{% url 'index' %}">{{ produto.nome }}</a></td>
                 <td>{{ produto.preco }}</td>
+                <td>{{ produto.estoque }}</td>
             </tr>
-        {% endfor %}
         </tbody>
     </table>
+
 </body>
 </html>
