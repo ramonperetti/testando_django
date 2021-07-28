@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-%@p6(wnl2x&^bdl%gw&*nr8&-68v)ah5efypgu+djbtz+-)k&1
 # DEBUG com valor False = modo produção
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*']  # quando a aplicação for postada colocar o link dela aq dentro
 
 
 # Application definition
